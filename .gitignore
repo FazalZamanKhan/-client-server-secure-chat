@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Keys and certs (do not commit private keys)
+certs/
+*.pem
+*.key
+*.csr
+
+# Environment files
+.env
+.env.local
+
+# Database
+db.sqlite3
+*.sql
+
+# Logs
+*.log
+
+# Builds
+dist/
+build/
+*.egg-info/
