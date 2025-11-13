@@ -1,0 +1,12 @@
+-- mysql/schema.sql
+CREATE DATABASE IF NOT EXISTS securechat CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE securechat;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  username VARCHAR(64) NOT NULL,
+  salt BINARY(16) NOT NULL,
+  pwd_hash CHAR(64) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
